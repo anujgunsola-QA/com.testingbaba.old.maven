@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+<groups>
+ <run>
+  <include name="sanity"></include>
+ </run>
+ </groups>
+<parameter name="browser" value="firefox"></parameter>
+<tests>
+ <test name="Login Test" enabled="false">
+	<classes>
+		<class name="practice.elementsTests.LoginTest" />
+	</classes>
+</test>
+<test name="TextBox Test" enabled="false">
+	<classes>
+		<class name="practice.elementsTests.TextBoxTest" />
+	</classes>
+</test>
+<test name="RadioButton Test" enabled="false">
+	<classes>
+		<class name="practice.elementsTests.RadioButtonTest" />
+	</classes>
+</test>
+<test name="CheckBox Test" enabled="true">
+	<classes>
+		<class name="practice.elementsTests.CheckBoxTest" />
+	</classes>
+</test>
+<test name="WebTable Test" enabled="false">
+	<classes>
+		<class name="practice.elementsTests.WebTableTest" />
+	</classes>
+</test>
+<test name="UploadAndDownload Test" enabled="false">
+	<classes>
+		<class name="practice.elementsTests.UploadAndDownloadTest" />
+	</classes>
+</test>
+</tests>
+</suite>
