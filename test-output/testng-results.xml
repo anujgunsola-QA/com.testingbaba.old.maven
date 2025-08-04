@@ -1,28 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="0" failed="3" skipped="3">
+<testng-results ignored="0" total="5" passed="0" failed="2" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-02T14:19:37 IST" name="Default suite" finished-at="2025-08-02T14:20:22 IST" duration-ms="44301">
+  <suite started-at="2025-08-04T12:50:57 IST" name="Default suite" finished-at="2025-08-04T12:51:02 IST" duration-ms="5305">
     <groups>
     </groups>
-    <test started-at="2025-08-02T14:19:37 IST" name="Default test" finished-at="2025-08-02T14:20:22 IST" duration-ms="44301">
-      <class name="practice.alertsFrameAndWindowsTests.FramesTest">
-        <test-method is-config="true" signature="launch()[pri:0, instance:practice.alertsFrameAndWindowsTests.FramesTest@7b4c50bc]" started-at="2025-08-02T14:19:37 IST" name="launch" finished-at="2025-08-02T14:19:41 IST" duration-ms="4000" status="PASS">
+    <test started-at="2025-08-04T12:50:57 IST" name="Default test" finished-at="2025-08-04T12:51:02 IST" duration-ms="5305">
+      <class name="practice.widgetsTests.DatePickerTest">
+        <test-method is-config="true" signature="launch()[pri:0, instance:practice.widgetsTests.DatePickerTest@4b520ea8]" started-at="2025-08-04T12:50:57 IST" name="launch" finished-at="2025-08-04T12:51:01 IST" duration-ms="4131" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="clickOnClose()[pri:1, instance:practice.alertsFrameAndWindowsTests.FramesTest@7b4c50bc]" started-at="2025-08-02T14:19:41 IST" name="clickOnClose" finished-at="2025-08-02T14:20:02 IST" duration-ms="20152" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method signature="clickOnClose()[pri:1, instance:practice.widgetsTests.DatePickerTest@4b520ea8]" started-at="2025-08-04T12:51:01 IST" name="clickOnClose" finished-at="2025-08-04T12:51:02 IST" duration-ms="1026" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='modal-content']' (tried for 10 second(s) with 500 milliseconds interval)]]>
+              <![CDATA[invalid session id: session deleted as the browser has closed the connection
+from disconnected: unable to send message to renderer
+  (Session info: chrome=138.0.7204.169)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [abc7bd98fc6c4e11e789b9fcb961992b, findElement {value=//div[@class='modal-content'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\Arvind\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50161}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50161/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: abc7bd98fc6c4e11e789b9fcb961992b]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='modal-content']' (tried for 10 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at baseLibrary.ManageBrowser.waitUntilVisible(ManageBrowser.java:166)
-at practice.alertsFramesAndWindowsPages.FramesPage.registerModalClose(FramesPage.java:39)
-at practice.alertsFrameAndWindowsTests.FramesTest.clickOnClose(FramesTest.java:20)
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: unable to send message to renderer
+  (Session info: chrome=138.0.7204.169)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [abc7bd98fc6c4e11e789b9fcb961992b, findElement {value=//div[@class='modal-content'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\Arvind\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50161}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50161/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: abc7bd98fc6c4e11e789b9fcb961992b
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy13.getWrappedElement(Unknown Source)
+at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:473)
+at baseLibrary.ManageBrowser.contentIsVisible(ManageBrowser.java:316)
+at practice.widgetsPages.DatePickerPage.registerModalClose(DatePickerPage.java:34)
+at practice.widgetsTests.DatePickerTest.clickOnClose(DatePickerTest.java:20)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -51,53 +92,21 @@ at org.testng.TestNG.run(TestNG.java:1079)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='modal-content']"}
-  (Session info: chrome=138.0.7204.169)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.34.0', revision: '707dcb4246*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9d336707d1008b8542c13be858e4f6a1, findElement {using=xpath, value=//div[@class='modal-content']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\Arvind\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54082}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54082/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9d336707d1008b8542c13be858e4f6a1
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-... 31 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnClose -->
-        <test-method signature="clickOnPractice()[pri:2, instance:practice.alertsFrameAndWindowsTests.FramesTest@7b4c50bc]" started-at="2025-08-02T14:20:02 IST" name="clickOnPractice" finished-at="2025-08-02T14:20:02 IST" depends-on-methods="practice.alertsFrameAndWindowsTests.FramesTest.clickOnClose" duration-ms="0" status="SKIP">
+        <test-method signature="clickOnPractice()[pri:2, instance:practice.widgetsTests.DatePickerTest@4b520ea8]" started-at="2025-08-04T12:51:02 IST" name="clickOnPractice" finished-at="2025-08-04T12:51:02 IST" depends-on-methods="practice.widgetsTests.DatePickerTest.clickOnClose" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method practice.alertsFrameAndWindowsTests.FramesTest.clickOnPractice() on instance practice.alertsFrameAndWindowsTests.FramesTest@7b4c50bc depends on not successfully finished methods 
-[practice.alertsFrameAndWindowsTests.FramesTest.clickOnClose() on instance practice.alertsFrameAndWindowsTests.FramesTest@7b4c50bc]]]>
+              <![CDATA[Method practice.widgetsTests.DatePickerTest.clickOnPractice() on instance practice.widgetsTests.DatePickerTest@4b520ea8 depends on not successfully finished methods 
+[practice.widgetsTests.DatePickerTest.clickOnClose() on instance practice.widgetsTests.DatePickerTest@4b520ea8]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method practice.alertsFrameAndWindowsTests.FramesTest.clickOnPractice() on instance practice.alertsFrameAndWindowsTests.FramesTest@7b4c50bc depends on not successfully finished methods 
-[practice.alertsFrameAndWindowsTests.FramesTest.clickOnClose() on instance practice.alertsFrameAndWindowsTests.FramesTest@7b4c50bc]
+              <![CDATA[java.lang.Throwable: Method practice.widgetsTests.DatePickerTest.clickOnPractice() on instance practice.widgetsTests.DatePickerTest@4b520ea8 depends on not successfully finished methods 
+[practice.widgetsTests.DatePickerTest.clickOnClose() on instance practice.widgetsTests.DatePickerTest@4b520ea8]
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -123,15 +132,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnPractice -->
-        <test-method signature="clickOnAlertsFrameAndWindows()[pri:3, instance:practice.alertsFrameAndWindowsTests.FramesTest@7b4c50bc]" started-at="2025-08-02T14:20:02 IST" name="clickOnAlertsFrameAndWindows" finished-at="2025-08-02T14:20:02 IST" depends-on-methods="practice.alertsFrameAndWindowsTests.FramesTest.clickOnPractice" duration-ms="1" status="SKIP">
+        <test-method signature="clickOnWidgets()[pri:3, instance:practice.widgetsTests.DatePickerTest@4b520ea8]" started-at="2025-08-04T12:51:02 IST" name="clickOnWidgets" finished-at="2025-08-04T12:51:02 IST" depends-on-methods="practice.widgetsTests.DatePickerTest.clickOnPractice" duration-ms="1" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method practice.alertsFrameAndWindowsTests.FramesTest.clickOnAlertsFrameAndWindows() on instance practice.alertsFrameAndWindowsTests.FramesTest@7b4c50bc depends on not successfully finished methods 
-[practice.alertsFrameAndWindowsTests.FramesTest.clickOnPractice() on instance practice.alertsFrameAndWindowsTests.FramesTest@7b4c50bc]]]>
+              <![CDATA[Method practice.widgetsTests.DatePickerTest.clickOnWidgets() on instance practice.widgetsTests.DatePickerTest@4b520ea8 depends on not successfully finished methods 
+[practice.widgetsTests.DatePickerTest.clickOnPractice() on instance practice.widgetsTests.DatePickerTest@4b520ea8]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method practice.alertsFrameAndWindowsTests.FramesTest.clickOnAlertsFrameAndWindows() on instance practice.alertsFrameAndWindowsTests.FramesTest@7b4c50bc depends on not successfully finished methods 
-[practice.alertsFrameAndWindowsTests.FramesTest.clickOnPractice() on instance practice.alertsFrameAndWindowsTests.FramesTest@7b4c50bc]
+              <![CDATA[java.lang.Throwable: Method practice.widgetsTests.DatePickerTest.clickOnWidgets() on instance practice.widgetsTests.DatePickerTest@4b520ea8 depends on not successfully finished methods 
+[practice.widgetsTests.DatePickerTest.clickOnPractice() on instance practice.widgetsTests.DatePickerTest@4b520ea8]
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -156,16 +165,16 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickOnAlertsFrameAndWindows -->
-        <test-method signature="clickOnAlerts()[pri:4, instance:practice.alertsFrameAndWindowsTests.FramesTest@7b4c50bc]" started-at="2025-08-02T14:20:02 IST" name="clickOnAlerts" finished-at="2025-08-02T14:20:02 IST" depends-on-methods="practice.alertsFrameAndWindowsTests.FramesTest.clickOnAlertsFrameAndWindows" duration-ms="0" status="SKIP">
+        </test-method> <!-- clickOnWidgets -->
+        <test-method signature="clickOnDatePicker()[pri:4, instance:practice.widgetsTests.DatePickerTest@4b520ea8]" started-at="2025-08-04T12:51:02 IST" name="clickOnDatePicker" finished-at="2025-08-04T12:51:02 IST" depends-on-methods="practice.widgetsTests.DatePickerTest.clickOnWidgets" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method practice.alertsFrameAndWindowsTests.FramesTest.clickOnAlerts() on instance practice.alertsFrameAndWindowsTests.FramesTest@7b4c50bc depends on not successfully finished methods 
-[practice.alertsFrameAndWindowsTests.FramesTest.clickOnAlertsFrameAndWindows() on instance practice.alertsFrameAndWindowsTests.FramesTest@7b4c50bc]]]>
+              <![CDATA[Method practice.widgetsTests.DatePickerTest.clickOnDatePicker() on instance practice.widgetsTests.DatePickerTest@4b520ea8 depends on not successfully finished methods 
+[practice.widgetsTests.DatePickerTest.clickOnWidgets() on instance practice.widgetsTests.DatePickerTest@4b520ea8]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method practice.alertsFrameAndWindowsTests.FramesTest.clickOnAlerts() on instance practice.alertsFrameAndWindowsTests.FramesTest@7b4c50bc depends on not successfully finished methods 
-[practice.alertsFrameAndWindowsTests.FramesTest.clickOnAlertsFrameAndWindows() on instance practice.alertsFrameAndWindowsTests.FramesTest@7b4c50bc]
+              <![CDATA[java.lang.Throwable: Method practice.widgetsTests.DatePickerTest.clickOnDatePicker() on instance practice.widgetsTests.DatePickerTest@4b520ea8 depends on not successfully finished methods 
+[practice.widgetsTests.DatePickerTest.clickOnWidgets() on instance practice.widgetsTests.DatePickerTest@4b520ea8]
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -190,30 +199,26 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickOnAlerts -->
-        <test-method signature="enterInFrame1()[pri:5, instance:practice.alertsFrameAndWindowsTests.FramesTest@7b4c50bc]" started-at="2025-08-02T14:20:02 IST" name="enterInFrame1" finished-at="2025-08-02T14:20:12 IST" duration-ms="10020" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- clickOnDatePicker -->
+        <test-method signature="enterDate()[pri:5, instance:practice.widgetsTests.DatePickerTest@4b520ea8]" started-at="2025-08-04T12:51:02 IST" name="enterDate" finished-at="2025-08-04T12:51:02 IST" duration-ms="52" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='tab_13']/iframe[1]"}
-  (Session info: chrome=138.0.7204.169)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[invalid session id
 Build info: version: '4.34.0', revision: '707dcb4246*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9d336707d1008b8542c13be858e4f6a1, findElement {using=xpath, value=//div[@id='tab_13']/iframe[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\Arvind\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54082}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54082/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9d336707d1008b8542c13be858e4f6a1]]>
+Command: [abc7bd98fc6c4e11e789b9fcb961992b, findElement {value=//*[@id="datePickerContainer"]/div[1]/div[2]/input, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\Arvind\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50161}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50161/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: abc7bd98fc6c4e11e789b9fcb961992b]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='tab_13']/iframe[1]"}
-  (Session info: chrome=138.0.7204.169)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: '4.34.0', revision: '707dcb4246*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9d336707d1008b8542c13be858e4f6a1, findElement {using=xpath, value=//div[@id='tab_13']/iframe[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\Arvind\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54082}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54082/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9d336707d1008b8542c13be858e4f6a1
+Command: [abc7bd98fc6c4e11e789b9fcb961992b, findElement {value=//*[@id="datePickerContainer"]/div[1]/div[2]/input, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\Arvind\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50161}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50161/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: abc7bd98fc6c4e11e789b9fcb961992b
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -231,11 +236,9 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy13.getWrappedElement(Unknown Source)
-at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:1117)
-at practice.alertsFramesAndWindowsPages.FramesPage.enterFrame1(FramesPage.java:56)
-at practice.alertsFrameAndWindowsTests.FramesTest.enterInFrame1(FramesTest.java:36)
+at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
+at practice.widgetsPages.DatePickerPage.selectDate(DatePickerPage.java:51)
+at practice.widgetsTests.DatePickerTest.enterDate(DatePickerTest.java:36)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -266,90 +269,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- enterInFrame1 -->
-        <test-method signature="enterInFrame2()[pri:6, instance:practice.alertsFrameAndWindowsTests.FramesTest@7b4c50bc]" started-at="2025-08-02T14:20:12 IST" name="enterInFrame2" finished-at="2025-08-02T14:20:22 IST" duration-ms="10055" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='tab_13']/iframe[2]"}
-  (Session info: chrome=138.0.7204.169)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.34.0', revision: '707dcb4246*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9d336707d1008b8542c13be858e4f6a1, findElement {using=xpath, value=//div[@id='tab_13']/iframe[2]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\Arvind\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54082}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54082/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9d336707d1008b8542c13be858e4f6a1]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='tab_13']/iframe[2]"}
-  (Session info: chrome=138.0.7204.169)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.34.0', revision: '707dcb4246*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9d336707d1008b8542c13be858e4f6a1, findElement {using=xpath, value=//div[@id='tab_13']/iframe[2]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\Arvind\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54082}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54082/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9d336707d1008b8542c13be858e4f6a1
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy13.getWrappedElement(Unknown Source)
-at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:1117)
-at practice.alertsFramesAndWindowsPages.FramesPage.enterFrame2(FramesPage.java:63)
-at practice.alertsFrameAndWindowsTests.FramesTest.enterInFrame2(FramesTest.java:40)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterInFrame2 -->
-      </class> <!-- practice.alertsFrameAndWindowsTests.FramesTest -->
+        </test-method> <!-- enterDate -->
+      </class> <!-- practice.widgetsTests.DatePickerTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,6 +1,5 @@
 package practice.alertsFrameAndWindowsTests;
 
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -40,10 +39,5 @@ public class NestedFramesTest extends ManageBrowser {
 	@Test(priority = 5, dependsOnMethods = "clickOnNestedFrames")
 	void getInnerFrameText() {
 		p.enterInnerFrameAndClick();
-	}
-	
-	@AfterTest
-	void quitSession() {
-		quitBrowser();
 	}
 }
