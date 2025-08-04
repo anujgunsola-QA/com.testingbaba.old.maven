@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="practice.widgetsTests.SliderTest">
+        <methods>
+          <include name="clickOnPractice"/>
+          <include name="clickOnClose"/>
+          <include name="clickOnWidgets"/>
+          <include name="clickOnSlider"/>
+          <include name="slidePointer"/>
+          <include name="colorSlide"/>
+          <include name="launch"/>
+        </methods>
+      </class> <!-- practice.widgetsTests.SliderTest -->
+      <class name="practice.elementsTests.TextBoxTest">
+        <methods>
+          <include name="clickOnElements"/>
+          <include name="clickOnTextBox"/>
+          <include name="clickOnPractice"/>
+          <include name="launch"/>
+          <include name="formFillUp"/>
+          <include name="clickOnClose"/>
+        </methods>
+      </class> <!-- practice.elementsTests.TextBoxTest -->
+      <class name="practice.alertsFrameAndWindowsTests.BrowserWindowsTest">
+        <methods>
+          <include name="clickOnNewWindowMessageButton"/>
+          <include name="clickOnClose"/>
+          <include name="clickOnAlertsFrameAndWindows"/>
+          <include name="launch"/>
+          <include name="clickOnNewTabButton"/>
+          <include name="clickOnAlerts"/>
+          <include name="clickOnNewWindowButton"/>
+          <include name="clickOnPractice"/>
+        </methods>
+      </class> <!-- practice.alertsFrameAndWindowsTests.BrowserWindowsTest -->
+      <class name="practice.elementsTests.RadioButtonTest">
+        <methods>
+          <include name="clickOnImpressiveRadioButton"/>
+          <include name="launch"/>
+          <include name="clickOnYesRadioButton"/>
+          <include name="clickOnRadioButtons"/>
+          <include name="clickOnPractice"/>
+          <include name="clickOnClose"/>
+          <include name="clickOnNoRadioButton"/>
+          <include name="clickOnElements"/>
+        </methods>
+      </class> <!-- practice.elementsTests.RadioButtonTest -->
+      <class name="practice.elementsTests.ButtonTest">
+        <methods>
+          <include name="clickOnSingleClickButton"/>
+          <include name="clickOnElements"/>
+          <include name="clickOnRightClickButton"/>
+          <include name="launch"/>
+          <include name="clickOnClose"/>
+          <include name="clickOnPractice"/>
+          <include name="clickOnDoubleClickButton"/>
+          <include name="clickOnButtons"/>
+        </methods>
+      </class> <!-- practice.elementsTests.ButtonTest -->
+      <class name="practice.elementsTests.LoginTest">
+        <methods>
+          <include name="userLogin"/>
+          <include name="launch"/>
+        </methods>
+      </class> <!-- practice.elementsTests.LoginTest -->
+      <class name="practice.alertsFrameAndWindowsTests.NestedFramesTest">
+        <methods>
+          <include name="clickOnNestedFrames"/>
+          <include name="getInnerFrameText"/>
+          <include name="clickOnPractice"/>
+          <include name="clickOnClose"/>
+          <include name="clickOnAlertsFrameAndWindows"/>
+          <include name="launch"/>
+        </methods>
+      </class> <!-- practice.alertsFrameAndWindowsTests.NestedFramesTest -->
+      <class name="practice.widgetsTests.SelectMenuTest">
+        <methods>
+          <include name="launch"/>
+          <include name="chooseSelectOneOption"/>
+          <include name="clickOnPractice"/>
+          <include name="clickOnWidgets"/>
+          <include name="chooseMultipleOptions"/>
+          <include name="clickOnClose"/>
+          <include name="clickOnSelectMenu"/>
+          <include name="chooseSelectValueOptions"/>
+        </methods>
+      </class> <!-- practice.widgetsTests.SelectMenuTest -->
+      <class name="practice.widgetsTests.MenuTest">
+        <methods>
+          <include name="chooseServicesUITest"/>
+          <include name="clickOnClose"/>
+          <include name="clickOnWidgets"/>
+          <include name="clickOnMenu"/>
+          <include name="clickOnPractice"/>
+          <include name="launch"/>
+        </methods>
+      </class> <!-- practice.widgetsTests.MenuTest -->
+      <class name="practice.elementsTests.LinksTest">
+        <methods>
+          <include name="clickOnLinksButton"/>
+          <include name="launch"/>
+          <include name="validateOpenTabsTitle"/>
+          <include name="clickOnDemoPageLink"/>
+          <include name="clickOnPractice"/>
+          <include name="clickOnClose"/>
+          <include name="clickOnElements"/>
+        </methods>
+      </class> <!-- practice.elementsTests.LinksTest -->
+      <class name="practice.elementsTests.WebTableTest">
+        <methods>
+          <include name="enterDataInWebTable"/>
+          <include name="clickOnPractice"/>
+          <include name="clickOnClose"/>
+          <include name="clickOnWebTable"/>
+          <include name="launch"/>
+          <include name="clicOnCancel"/>
+          <include name="clickOnElements"/>
+          <include name="clickOnEdit"/>
+        </methods>
+      </class> <!-- practice.elementsTests.WebTableTest -->
+      <class name="practice.alertsFrameAndWindowsTests.AlertsTest">
+        <methods>
+          <include name="clickOnAlertAndAcceptButton"/>
+          <include name="clickOnPromptInputAndAccept"/>
+          <include name="clickOnAlerts"/>
+          <include name="clickOnWaitAlertAndAcceptButton"/>
+          <include name="clickOnSeeAlertAndAcceptButton"/>
+          <include name="launch"/>
+          <include name="clickOnAlertsFrameAndWindows"/>
+          <include name="clickOnPractice"/>
+          <include name="clickOnPromptAndCancel"/>
+          <include name="clickOnAlertAndCancelButton"/>
+          <include name="clickOnClose"/>
+        </methods>
+      </class> <!-- practice.alertsFrameAndWindowsTests.AlertsTest -->
+      <class name="practice.alertsFrameAndWindowsTests.FramesTest">
+        <methods>
+          <include name="clickOnAlerts"/>
+          <include name="launch"/>
+          <include name="clickOnAlertsFrameAndWindows"/>
+          <include name="enterInFrame1"/>
+          <include name="enterInFrame2"/>
+          <include name="clickOnPractice"/>
+          <include name="clickOnClose"/>
+        </methods>
+      </class> <!-- practice.alertsFrameAndWindowsTests.FramesTest -->
+      <class name="practice.elementsTests.UploadAndDownloadTest">
+        <methods>
+          <include name="clickOnClose"/>
+          <include name="launch"/>
+          <include name="clickOnElements"/>
+          <include name="clickOnUploadAndDownloadButton"/>
+          <include name="clickOnPractice"/>
+          <include name="performUpload"/>
+        </methods>
+      </class> <!-- practice.elementsTests.UploadAndDownloadTest -->
+      <class name="practice.alertsFrameAndWindowsTests.ModalDialogsTest">
+        <methods>
+          <include name="largeDialogModal"/>
+          <include name="clickOnAlertsFrameAndWindows"/>
+          <include name="launch"/>
+          <include name="clickOnModalDialogs"/>
+          <include name="clickOnClose"/>
+          <include name="clickOnPractice"/>
+          <include name="smallDialogModal"/>
+        </methods>
+      </class> <!-- practice.alertsFrameAndWindowsTests.ModalDialogsTest -->
+      <class name="practice.elementsTests.CheckBoxTest">
+        <methods>
+          <include name="clickDesktopCheckBox"/>
+          <include name="clickLaptopCheckBox"/>
+          <include name="clickCheckBox"/>
+          <include name="launch"/>
+          <include name="clickOnClose"/>
+          <include name="clickOnPractice"/>
+          <include name="clickOnElements"/>
+          <include name="clickMobileCheckBox"/>
+        </methods>
+      </class> <!-- practice.elementsTests.CheckBoxTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

@@ -3,17 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practice.alertsFrameAndWindowsTests.FramesTest">
+      <class name="practice.widgetsTests.DatePickerTest">
         <methods>
-          <include name="clickOnAlerts"/>
-          <include name="clickOnAlertsFrameAndWindows"/>
-          <include name="launch"/>
-          <include name="enterInFrame1"/>
-          <include name="enterInFrame2"/>
+          <include name="clickOnDatePicker"/>
           <include name="clickOnClose"/>
           <include name="clickOnPractice"/>
+          <include name="clickOnWidgets"/>
+          <include name="enterDate"/>
+          <include name="launch"/>
         </methods>
-      </class> <!-- practice.alertsFrameAndWindowsTests.FramesTest -->
+      </class> <!-- practice.widgetsTests.DatePickerTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

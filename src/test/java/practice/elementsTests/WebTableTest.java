@@ -1,6 +1,5 @@
 package practice.elementsTests;
 
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -50,10 +49,5 @@ WebTablePage p;
 	@Test(priority=8, dependsOnMethods="enterDataInWebTable")
 	void clicOnCancel() {
 		p.editAndCancelWebTable();
-	}
-	
-	@AfterTest
-	void quitSession() {
-		quitBrowser();
 	}
 }
