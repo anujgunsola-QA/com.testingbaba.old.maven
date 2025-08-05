@@ -67,8 +67,10 @@ public class ManageBrowser implements ExcelData, TextBoxPageData, RadioButtonDat
 		}
 		else
 			if(browserName.equals("firefox")) {
-				String path = System.getProperty("user.dir")+"\\webdrivers\\geckodriver.exe";
-				System.setProperty("webdriver.gecko.driver", path);
+				/*
+				 * String path = System.getProperty("user.dir")+"\\webdrivers\\geckodriver.exe";
+				 * System.setProperty("webdriver.gecko.driver", path);
+				 */
 				driver = new FirefoxDriver();
 			}
 			else
