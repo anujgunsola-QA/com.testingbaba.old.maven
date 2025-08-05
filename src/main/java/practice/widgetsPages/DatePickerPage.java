@@ -33,6 +33,7 @@ public class DatePickerPage extends ManageBrowser {
 	public void registerModalClose() {
 		contentIsVisible(modal);
 		waitUntilClickableAndClick(close);
+		waitUntilinVisible(modal);
 	}
 	
 	public void clickPractice() {

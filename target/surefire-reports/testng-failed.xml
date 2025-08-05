@@ -3,17 +3,18 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="practice.widgetsTests.SliderTest">
+      <class name="practice.widgetsTests.SelectMenuTest">
         <methods>
-          <include name="clickOnPractice"/>
-          <include name="clickOnClose"/>
-          <include name="clickOnWidgets"/>
-          <include name="clickOnSlider"/>
-          <include name="slidePointer"/>
-          <include name="colorSlide"/>
+          <include name="chooseSelectOneOption"/>
           <include name="launch"/>
+          <include name="clickOnPractice"/>
+          <include name="clickOnWidgets"/>
+          <include name="chooseMultipleOptions"/>
+          <include name="clickOnSelectMenu"/>
+          <include name="clickOnClose"/>
+          <include name="chooseSelectValueOptions"/>
         </methods>
-      </class> <!-- practice.widgetsTests.SliderTest -->
+      </class> <!-- practice.widgetsTests.SelectMenuTest -->
       <class name="practice.elementsTests.TextBoxTest">
         <methods>
           <include name="clickOnElements"/>
@@ -29,8 +30,8 @@
           <include name="clickOnNewWindowMessageButton"/>
           <include name="clickOnClose"/>
           <include name="clickOnAlertsFrameAndWindows"/>
-          <include name="launch"/>
           <include name="clickOnNewTabButton"/>
+          <include name="launch"/>
           <include name="clickOnAlerts"/>
           <include name="clickOnNewWindowButton"/>
           <include name="clickOnPractice"/>
@@ -42,8 +43,8 @@
           <include name="launch"/>
           <include name="clickOnYesRadioButton"/>
           <include name="clickOnRadioButtons"/>
-          <include name="clickOnPractice"/>
           <include name="clickOnClose"/>
+          <include name="clickOnPractice"/>
           <include name="clickOnNoRadioButton"/>
           <include name="clickOnElements"/>
         </methods>
@@ -55,8 +56,8 @@
           <include name="clickOnRightClickButton"/>
           <include name="launch"/>
           <include name="clickOnClose"/>
-          <include name="clickOnPractice"/>
           <include name="clickOnDoubleClickButton"/>
+          <include name="clickOnPractice"/>
           <include name="clickOnButtons"/>
         </methods>
       </class> <!-- practice.elementsTests.ButtonTest -->
@@ -76,18 +77,6 @@
           <include name="launch"/>
         </methods>
       </class> <!-- practice.alertsFrameAndWindowsTests.NestedFramesTest -->
-      <class name="practice.widgetsTests.SelectMenuTest">
-        <methods>
-          <include name="launch"/>
-          <include name="chooseSelectOneOption"/>
-          <include name="clickOnPractice"/>
-          <include name="clickOnWidgets"/>
-          <include name="chooseMultipleOptions"/>
-          <include name="clickOnClose"/>
-          <include name="clickOnSelectMenu"/>
-          <include name="chooseSelectValueOptions"/>
-        </methods>
-      </class> <!-- practice.widgetsTests.SelectMenuTest -->
       <class name="practice.widgetsTests.MenuTest">
         <methods>
           <include name="chooseServicesUITest"/>
@@ -98,14 +87,24 @@
           <include name="launch"/>
         </methods>
       </class> <!-- practice.widgetsTests.MenuTest -->
+      <class name="practice.widgetsTests.DatePickerTest">
+        <methods>
+          <include name="clickOnClose"/>
+          <include name="clickOnDatePicker"/>
+          <include name="clickOnPractice"/>
+          <include name="clickOnWidgets"/>
+          <include name="enterDate"/>
+          <include name="launch"/>
+        </methods>
+      </class> <!-- practice.widgetsTests.DatePickerTest -->
       <class name="practice.elementsTests.LinksTest">
         <methods>
           <include name="clickOnLinksButton"/>
           <include name="launch"/>
           <include name="validateOpenTabsTitle"/>
-          <include name="clickOnDemoPageLink"/>
-          <include name="clickOnPractice"/>
           <include name="clickOnClose"/>
+          <include name="clickOnPractice"/>
+          <include name="clickOnDemoPageLink"/>
           <include name="clickOnElements"/>
         </methods>
       </class> <!-- practice.elementsTests.LinksTest -->
@@ -114,8 +113,8 @@
           <include name="enterDataInWebTable"/>
           <include name="clickOnPractice"/>
           <include name="clickOnClose"/>
-          <include name="clickOnWebTable"/>
           <include name="launch"/>
+          <include name="clickOnWebTable"/>
           <include name="clicOnCancel"/>
           <include name="clickOnElements"/>
           <include name="clickOnEdit"/>
@@ -123,19 +122,30 @@
       </class> <!-- practice.elementsTests.WebTableTest -->
       <class name="practice.alertsFrameAndWindowsTests.AlertsTest">
         <methods>
-          <include name="clickOnAlertAndAcceptButton"/>
           <include name="clickOnPromptInputAndAccept"/>
+          <include name="clickOnAlertAndAcceptButton"/>
           <include name="clickOnAlerts"/>
           <include name="clickOnWaitAlertAndAcceptButton"/>
           <include name="clickOnSeeAlertAndAcceptButton"/>
-          <include name="launch"/>
           <include name="clickOnAlertsFrameAndWindows"/>
+          <include name="launch"/>
+          <include name="clickOnAlertAndCancelButton"/>
           <include name="clickOnPractice"/>
           <include name="clickOnPromptAndCancel"/>
-          <include name="clickOnAlertAndCancelButton"/>
           <include name="clickOnClose"/>
         </methods>
       </class> <!-- practice.alertsFrameAndWindowsTests.AlertsTest -->
+      <class name="practice.widgetsTests.SliderTest">
+        <methods>
+          <include name="clickOnClose"/>
+          <include name="clickOnPractice"/>
+          <include name="clickOnWidgets"/>
+          <include name="clickOnSlider"/>
+          <include name="slidePointer"/>
+          <include name="colorSlide"/>
+          <include name="launch"/>
+        </methods>
+      </class> <!-- practice.widgetsTests.SliderTest -->
       <class name="practice.alertsFrameAndWindowsTests.FramesTest">
         <methods>
           <include name="clickOnAlerts"/>
@@ -159,9 +169,9 @@
       </class> <!-- practice.elementsTests.UploadAndDownloadTest -->
       <class name="practice.alertsFrameAndWindowsTests.ModalDialogsTest">
         <methods>
-          <include name="largeDialogModal"/>
-          <include name="clickOnAlertsFrameAndWindows"/>
           <include name="launch"/>
+          <include name="clickOnAlertsFrameAndWindows"/>
+          <include name="largeDialogModal"/>
           <include name="clickOnModalDialogs"/>
           <include name="clickOnClose"/>
           <include name="clickOnPractice"/>
@@ -176,8 +186,8 @@
           <include name="launch"/>
           <include name="clickOnClose"/>
           <include name="clickOnPractice"/>
-          <include name="clickOnElements"/>
           <include name="clickMobileCheckBox"/>
+          <include name="clickOnElements"/>
         </methods>
       </class> <!-- practice.elementsTests.CheckBoxTest -->
     </classes>
